@@ -22,15 +22,12 @@ All charts were created in RStudio using the R language version 4.2.2. Libraries
 </div>
 
 ## Sample charts that were not used
-
 ![](boxplot_ww.png)
-
 <div style="text-align: justify">
 A box plot was created to describe the relationship between listening to music during work, the number of hours spent listening to music during the day, and the rating of anxiety, depression, insomnia, and obsessive-compulsive disorder levels by the respondents. 
 </div>
 
 ![](violin_insomnia.png)
-
 A violin plot was created to depict the level of insomnia based on the daily hours spent listening to music.
 
 ## How to run the script?
@@ -60,10 +57,8 @@ boxplot_tempo <- {
 }
 ```
 Displaying the plot
-
 ```{r, out.width="100%"}
 boxplot_tempo 
 
 ```
 ![](boxplot_tempo.png)
-
