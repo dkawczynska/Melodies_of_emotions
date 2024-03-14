@@ -328,3 +328,18 @@ radar_chart_d <- radarchart(fav_genre_table_dc, axistype = 0, seg = 10,
     geom_col() +
     theme_light()
 }
+
+library(PogromcyDanych)
+
+ggsave(bwplot(Anxiety +  Depression + Insomnia + OCD ~ hours,
+              data = hours_table_nww,
+              groups = hours,   
+              coef = 2, 
+              do.out = TRUE,
+              outer = TRUE,
+              xlab = "The number of hours spent listening to music per day",
+              ylab = "Rating (on a scale of 0-10) of the condition",
+              main = "Not listening to music during work"),            
+       filename = "boxplot_ww.png",
+       bg = "transparent")
+
